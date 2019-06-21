@@ -1,5 +1,6 @@
 {
   "name": "@mobx-form-constructor/react",
+  "private": false,
   "description": "react bindings",
   "version": "0.0.1-alpha.1",
   "main": "./lib/index.js",
@@ -44,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/mobx-form-constructor/react/issues"
   },
-  "homepage": "https://github.com/mobx-form-constructor/react#readme"
+  "homepage": "https://github.com/mobx-form-constructor/react#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
