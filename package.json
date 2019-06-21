@@ -1,0 +1,48 @@
+{
+  "name": "@mobx-form-constructor/react",
+  "description": "react bindings",
+  "version": "0.0.1-alpha.1",
+  "main": "./lib/index.js",
+  "module": "./module/index.js",
+  "jsnext:main": "./module/index.js",
+  "typings": "./typings/index.d.ts",
+  "author": "Alex <olefirenk@gmail.com>",
+  "scripts": {
+    "build:module": "cross-env tsc --target es5 --outDir ./module",
+    "build:lib": "cross-env tsc --target es5 --module commonjs --outDir ./lib",
+    "build": "npm run clean && npm run build:module && npm run build:lib",
+    "clean": "rm -rf ./lib ./module ./typings"
+  },
+  "devDependencies": {
+    "@mobx-form-constructor/core": "^0.0.1-alpha.11",
+    "@types/react": "^16.8.21",
+    "cross-env": "^5.2.0",
+    "mobx": "^5.10.1",
+    "mobx-react-lite": "^1.4.0",
+    "prettier": "^1.18.2",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.2"
+  },
+  "peerDependencies": {
+    "mobx": "^4 | ^5",
+    "mobx-react-lite": "^1",
+    "@mobx-form-constructor/core": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobx-form-constructor/react.git"
+  },
+  "keywords": [
+    "react",
+    "bindings",
+    "mobx-form",
+    "mobx",
+    "form",
+    "mobx-form-constructor"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mobx-form-constructor/react/issues"
+  },
+  "homepage": "https://github.com/mobx-form-constructor/react#readme"
+}
