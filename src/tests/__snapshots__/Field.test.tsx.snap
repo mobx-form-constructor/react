@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Field should renders correctly without any type error 1`] = `
+<div>
+  <div>
+    <div>
+      key: 
+      username
+    </div>
+    <label>
+      Username
+      <input
+        value=""
+      />
+    </label>
+    children
+  </div>
+  <div>
+    <div>
+      key: 
+      username
+    </div>
+    <label>
+      Username
+      <input
+        value=""
+      />
+    </label>
+  </div>
+  <select
+    placeholder="sd"
+  >
+    children
+  </select>
+  <select
+    placeholder="sd"
+  />
+</div>
+`;
