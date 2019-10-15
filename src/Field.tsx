@@ -15,14 +15,14 @@ export interface IBaseProps<
   component: C
 }
 
-export type GenericComponentType = 'input' | 'textarea' | 'select'
+export type GenericComponentType = 'input' | 'textarea' | 'select' | 'password'
 export type FieldComponentType = ComponentType<any> | GenericComponentType
 
 export type Bindings<
   F extends IField,
   T extends BindType = 'input'
 > = ReturnType<
-  T extends 'input'
+  T extends ('input' | 'password')
     ? F['bind']
     : T extends 'checkbox'
     ? F['bindCheckbox']
